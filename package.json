@@ -1,0 +1,21 @@
+{
+  "name": "mern_graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Pym Phekasut",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.8.1",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^16.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
