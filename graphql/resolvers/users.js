@@ -15,7 +15,7 @@ function generateToken(user) {
 }
 
 module.exports = {
-    /** args: registerInput */
+    /** structure: (_ or parent, {args: Input}, context, info) */
     Mutation: {
         async login(_, { username, password }) {
             const { errors, valid } = validateLoginInput(username, password);
