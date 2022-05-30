@@ -34,9 +34,10 @@ module.exports = {
         /** Context which means request that we specify in server (index.js) */
         /** Create data  */
         async createPost(_, { body }, context) {
+            console.log('createPost');
             const user = checkAuth(context);
 
-            if (argsToArgsConfig.body.trim() === '') {
+            if (body.trim() === '') {
                 throw new Error('Post body must not be empty');
             }
 
