@@ -9,7 +9,8 @@ const { MONGODB } = require('./config');
 
 const pubsub = new PubSub();
 
-//Why grapgh with Apollo server
+const PORT = process.env.PORT || 5000;
+
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -18,8 +19,10 @@ const server = new ApolloServer({
 
 mongoose.connect(MONGODB).then(() => {
     console.log("MongoDB connected");
-    return server.listen({ port: 5000 });
+    return server.listen({ port: PORT });
 }).then(res => {
     console.log(`Server running on ${res.url}`);
+}).catch(err => {
+    console.log(err);
 });
 
