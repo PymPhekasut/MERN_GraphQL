@@ -1,9 +1,9 @@
 ### Twiiter Application
 
-- Create a social media app using MongoDB, Express, Node, React, GraphQL, and Node (the MERNG stack).
-- To implement a GraphQL server that uses Node and Express to communicate to a MongoDB Database and fetch and persist data to a social media app back-end.
-- Providing authentication using JWT token and Bcrypt
-- Deploy through Heroku (server side) and Netlify (client side)
+- Creating a social media app using MongoDB, Express, Node, React, GraphQL, and Node (the MERNG stack).
+- Implementing a GraphQL server that uses Node and Express to communicate to a MongoDB Database and fetch and persist data to a social media app back-end.
+- Providing authentication using JWT token and Bcrypt.
+- Deploying through Heroku (server side) and Netlify (client side).
 
 Start project both server (from root directory) and client folder
 
